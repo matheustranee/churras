@@ -17,9 +17,13 @@ namespace Churras.Project.Domain.Entities.v1
         }
         
         public DateTime Data { get; private set; }
+
         public string Descricao { get; private set; }
+
         public string ObservacoesAdicionais { get; private set; }
+
         public double ValorSugerido { get; private set; }
+
         public List<Pessoa> Pessoas { get; set; }
 
         public void AddPessoa(Pessoa pessoa)

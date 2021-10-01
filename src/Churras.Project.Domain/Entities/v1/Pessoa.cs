@@ -9,7 +9,9 @@ namespace Churras.Project.Domain.Entities.v1
             Nome = nome;
             ValorContribuicao = valorContribuicao;
         }
+
         public string Nome { get; private set; }
+
         public double ValorContribuicao { get; private set; }
     }
 }

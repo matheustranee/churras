@@ -8,8 +8,11 @@ namespace Churras.Project.Domain.Commands.v1.CriarChurrasco
     public class CriarChurrascoCommand : IRequest<EventResponse<Churrasco>>
     {
         public DateTime Data { get; set; }
+
         public string Descricao { get; set; }
+
         public string ObservacoesAdicionais { get; set; } = "";
+
         public double ValorSugerido { get; set; }
 
         public static Churrasco CriarChurrasco(CriarChurrascoCommand criarChurrascoCommand) =>
