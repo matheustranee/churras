@@ -8,9 +8,11 @@ namespace Churras.Project.Shared.Domain.Classes
     public class Command<T> where T : class
     {
         private readonly IEnumerable<IValidator<T>> _validators;
+
         public List<ValidationFailure> Notifications { get; }
         
         private bool IsValid = true;
+
         public bool CommandIsValid {get{ return IsValid; } }
         
         public Command(IEnumerable<IValidator<T>> validators)

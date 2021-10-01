@@ -14,6 +14,7 @@ namespace Churras.Project.Db.Repository.Churrasco
         {
             _configuration = configuration;
         }
+
         public async Task<EventResponse<Domain.Entities.v1.Churrasco>> AlterarChurrascoNoBanco(Domain.Entities.v1.Churrasco churrasco)
         {
             return EventResponse<Domain.Entities.v1.Churrasco>.CriarRepostaSemMensagem();

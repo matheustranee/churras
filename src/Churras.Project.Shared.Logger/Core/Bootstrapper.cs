@@ -7,7 +7,6 @@ namespace Churras.Project.Shared.Logger.Core
     {
         public static IServiceCollection AddLogger(this IServiceCollection services, IConfiguration configuration)
         {
-
             return services;
         }
     }

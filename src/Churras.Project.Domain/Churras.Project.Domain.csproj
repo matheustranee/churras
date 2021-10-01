@@ -6,8 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Queries\v1\BuscarChurrascos\" />
-    <Folder Include="Queries\v1\BuscarChurrasco\" />
+    <Compile Remove="Queries\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <None Remove="Queries\**" />
   </ItemGroup>
 
   <ItemGroup>

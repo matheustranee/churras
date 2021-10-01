@@ -12,9 +12,13 @@ namespace Churras.Project.Shared.Domain.Classes
         }
 
         public T Data { get; set; }
+
         public List<FluentValidation.Results.ValidationFailure> Mensagens { get; private set; }
+
         public void AddicionarMensagem(FluentValidation.Results.ValidationFailure mensagem) => Mensagens.Add(mensagem);
+
         public void AddicionarMensagem(IEnumerable<FluentValidation.Results.ValidationFailure> mensagem) => Mensagens.AddRange(mensagem);
+
         public bool Sucesso { get { return !Mensagens.Any(); } }
 
         public static EventResponse<T> CriarRepostaComMensagem(FluentValidation.Results.ValidationFailure mensagem)
